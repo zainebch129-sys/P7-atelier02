@@ -1,30 +1,74 @@
-.lmj-plant-list {
-	list-style-type: none;
-	padding: 32px;
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 800px;
+shopping-list-container {
+  margin-top: 10px;
 }
 
-.lmj-plant-item {
-	border: solid 2px black;
-	border-radius: 10px;
-	height: 150px;
-	width: 150px;
-	margin: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	position: relative;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.lmj-sales {
-	position: absolute;
-	right: 0px;
-	top: 10px;
-	font-weight: 500;
-	color: white;
-	padding: 5px 10px;
-	background-color: #31b572;
+.product-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+ 
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+}
+
+.sale-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.product-emoji {
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  color: #059669;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+  background-color: #1d4ed8;
 }
